@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+
 @interface ContentView : UIView
 
 @property (nonatomic, strong) UITextView *chatTextView;
@@ -14,6 +15,7 @@
 @property (nonatomic, assign) CGFloat animationDuration;
 
 
+-(instancetype)initWithTextView:(UITextView *)textView ChatTextViewHeightConstraint:(NSLayoutConstraint *)heightConstraint contentView:(UIView *)contentView ContentViewHeightConstraint:(NSLayoutConstraint *)contentViewHeightConstraint andContentViewBottomConstraint:(NSLayoutConstraint *)contentViewBottomConstraint NS_DESIGNATED_INITIALIZER;
 
 - (void)updateMinimumNumberOfLines:(NSInteger)minimumNumberOfLines
             andMaximumNumberOfLine:(NSInteger)maximumNumberOfLines;
